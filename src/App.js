@@ -1,10 +1,10 @@
 import React,{Component} from "react";
-import TodoApp from "./Component/ToDoApp/TodoApp";
+import TodoApp from "./Component/TodoApp";
 
 export class App extends Component {
   render(){
     return (
-    <div>
+      <div>
       <TodoApp/>
     </div>
   )}

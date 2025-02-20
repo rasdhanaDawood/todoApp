@@ -34,6 +34,17 @@ h1{
      
 }
 
+.edit-input{
+    border-radius: 5px;
+    border: 1px solid rgb(226, 226, 226);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    color:rgb(129, 129, 129);
+
+}
+
 ul{
     padding: 0;  
     text-align: left;
@@ -49,19 +60,51 @@ ul li{
     box-shadow:0 4px 6px #00000066;
     display: flex;
     align-items: center; 
-
+    justify-content: space-between;
+    
 }
 
-ul li i{
+.todo-button {
     border: none;
     background: none;
     color: grey;
-    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    gap: 5px;
+}
+
+ul li svg {
+    width: 25px; 
+    height: 25px;
+}
+
+ul li button p{
+    flex: 1;
+}
+
+.fa-pen-to-square{
+    border: none;
+    background: none;
+    color: grey;
+    margin-right: 10px;
     cursor: pointer;
     text-align: right;
     flex: 1;
 }
 
+.fa-trash-can{
+    border: none;
+    background: none;
+    color: grey;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 input::placeholder{
     color:silver;
 }
+
